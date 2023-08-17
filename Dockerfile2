@@ -1,0 +1,18 @@
+# STEP 1: Build sqlc
+FROM golang:1.20.7
+#AS builder
+
+COPY . /workspace
+WORKDIR /workspace
+
+RUN go env -w GO111MODULE=on
+RUN go env -w GOPROXY=https://goproxy.cn,direct
+RUN go mod tidy
+RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build ./cmd/sqlc
+
+## STEP 2: Build a tiny image
+#FROM scratch
+#
+#COPY --from=builder /workspace/sqlc /workspace/sqlc
+
+ENTRYPOINT ["/workspace/sqlc"]

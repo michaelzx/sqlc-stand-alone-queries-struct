@@ -190,14 +190,18 @@ func buildQueries(req *plugin.CodeGenRequest, structs []Struct) ([]Query, error)
 		if query.Cmd == "" {
 			continue
 		}
-		if req.Settings.Go.StandAloneName != "" {
-			query.Name = req.Settings.Go.StandAloneName + sdk.Title(query.Name)
+
+		var checkStandAloneName = func(queryName string) string {
+			if req.Settings.Go.StandAloneName != "" {
+				queryName = req.Settings.Go.StandAloneName + sdk.Title(queryName)
+			}
+			return queryName
 		}
 		var constantName string
 		if req.Settings.Go.EmitExportedQueries {
-			constantName = sdk.Title(query.Name)
+			constantName = sdk.Title(checkStandAloneName(query.Name))
 		} else {
-			constantName = sdk.LowerTitle(query.Name)
+			constantName = sdk.LowerTitle(checkStandAloneName(query.Name))
 		}
 
 		gq := Query{
