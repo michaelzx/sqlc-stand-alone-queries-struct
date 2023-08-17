@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"github.com/sqlc-dev/sqlc/internal/cmd"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/cmd"
 	"os"
 	"path/filepath"
 )

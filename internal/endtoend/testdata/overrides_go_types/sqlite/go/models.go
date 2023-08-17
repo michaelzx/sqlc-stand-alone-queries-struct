@@ -5,7 +5,7 @@
 package override
 
 import (
-	"github.com/sqlc-dev/sqlc-testdata/pkg"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct-testdata/pkg"
 )
 
 type Bar struct {

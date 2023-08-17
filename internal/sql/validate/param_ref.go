@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/sqlc-dev/sqlc/internal/sql/ast"
-	"github.com/sqlc-dev/sqlc/internal/sql/astutils"
-	"github.com/sqlc-dev/sqlc/internal/sql/sqlerr"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/ast"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/astutils"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/sqlerr"
 )
 
 func ParamRef(n ast.Node) (map[int]bool, bool, error) {

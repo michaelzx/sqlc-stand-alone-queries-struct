@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/sqlc-dev/sqlc/internal/metadata"
-	"github.com/sqlc-dev/sqlc/internal/plugin"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/metadata"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/plugin"
 )
 
 type QueryValue struct {

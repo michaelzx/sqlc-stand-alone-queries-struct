@@ -9,7 +9,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/sqlc-dev/sqlc-testdata/pkg"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct-testdata/pkg"
 )
 
 const testIN = `-- name: TestIN :many

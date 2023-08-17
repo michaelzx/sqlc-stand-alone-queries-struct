@@ -12,9 +12,9 @@ import (
 	nodes "github.com/pganalyze/pg_query_go/v4"
 	"github.com/pganalyze/pg_query_go/v4/parser"
 
-	"github.com/sqlc-dev/sqlc/internal/metadata"
-	"github.com/sqlc-dev/sqlc/internal/sql/ast"
-	"github.com/sqlc-dev/sqlc/internal/sql/sqlerr"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/metadata"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/ast"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/sqlerr"
 )
 
 func stringSlice(list *nodes.List) []string {
@@ -184,11 +184,11 @@ func (p *Parser) Parse(r io.Reader) ([]ast.Statement, error) {
 }
 
 func normalizeErr(err error) error {
-	//TODO: errors.As complains that *parser.Error does not implement error
+	// TODO: errors.As complains that *parser.Error does not implement error
 	if pErr, ok := err.(*parser.Error); ok {
 		sErr := &sqlerr.Error{
 			Message: pErr.Message,
-			//Err:      pErr,
+			// Err:      pErr,
 			Line:     pErr.Lineno,
 			Location: pErr.Cursorpos,
 		}

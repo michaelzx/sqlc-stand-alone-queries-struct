@@ -8,13 +8,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/sqlc-dev/sqlc/internal/metadata"
-	"github.com/sqlc-dev/sqlc/internal/migrations"
-	"github.com/sqlc-dev/sqlc/internal/multierr"
-	"github.com/sqlc-dev/sqlc/internal/opts"
-	"github.com/sqlc-dev/sqlc/internal/sql/ast"
-	"github.com/sqlc-dev/sqlc/internal/sql/sqlerr"
-	"github.com/sqlc-dev/sqlc/internal/sql/sqlpath"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/metadata"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/migrations"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/multierr"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/opts"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/ast"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/sqlerr"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/sqlpath"
 )
 
 // TODO: Rename this interface Engine

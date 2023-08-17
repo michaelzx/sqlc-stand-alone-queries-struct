@@ -6,15 +6,15 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/sqlc-dev/sqlc/internal/config"
-	"github.com/sqlc-dev/sqlc/internal/debug"
-	"github.com/sqlc-dev/sqlc/internal/metadata"
-	"github.com/sqlc-dev/sqlc/internal/opts"
-	"github.com/sqlc-dev/sqlc/internal/source"
-	"github.com/sqlc-dev/sqlc/internal/sql/ast"
-	"github.com/sqlc-dev/sqlc/internal/sql/astutils"
-	"github.com/sqlc-dev/sqlc/internal/sql/rewrite"
-	"github.com/sqlc-dev/sqlc/internal/sql/validate"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/config"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/debug"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/metadata"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/opts"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/source"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/ast"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/astutils"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/rewrite"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/validate"
 )
 
 var ErrUnsupportedStatementType = errors.New("parseQuery: unsupported statement type")

@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/sqlc-dev/sqlc/internal/sql/ast"
-	"github.com/sqlc-dev/sqlc/internal/sql/astutils"
-	"github.com/sqlc-dev/sqlc/internal/sql/catalog"
-	"github.com/sqlc-dev/sqlc/internal/sql/named"
-	"github.com/sqlc-dev/sqlc/internal/sql/rewrite"
-	"github.com/sqlc-dev/sqlc/internal/sql/sqlerr"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/ast"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/astutils"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/catalog"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/named"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/rewrite"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/sqlerr"
 )
 
 func dataType(n *ast.TypeName) string {

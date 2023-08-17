@@ -7,8 +7,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/sqlc-dev/sqlc/internal/codegen/json"
-	"github.com/sqlc-dev/sqlc/internal/plugin"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/codegen/json"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/plugin"
 )
 
 func main() {

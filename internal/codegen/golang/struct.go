@@ -5,7 +5,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/sqlc-dev/sqlc/internal/plugin"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/plugin"
 )
 
 type Struct struct {

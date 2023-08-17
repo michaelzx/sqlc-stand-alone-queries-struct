@@ -3,12 +3,12 @@ package compiler
 import (
 	"fmt"
 
-	"github.com/sqlc-dev/sqlc/internal/config"
-	"github.com/sqlc-dev/sqlc/internal/engine/dolphin"
-	"github.com/sqlc-dev/sqlc/internal/engine/postgresql"
-	"github.com/sqlc-dev/sqlc/internal/engine/sqlite"
-	"github.com/sqlc-dev/sqlc/internal/opts"
-	"github.com/sqlc-dev/sqlc/internal/sql/catalog"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/config"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/engine/dolphin"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/engine/postgresql"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/engine/sqlite"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/opts"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/catalog"
 )
 
 type Compiler struct {

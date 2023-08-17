@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sqlc-dev/sqlc/internal/sql/sqlpath"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sql/sqlpath"
 
 	_ "github.com/lib/pq"
 )

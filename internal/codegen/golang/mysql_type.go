@@ -3,9 +3,9 @@ package golang
 import (
 	"log"
 
-	"github.com/sqlc-dev/sqlc/internal/codegen/sdk"
-	"github.com/sqlc-dev/sqlc/internal/debug"
-	"github.com/sqlc-dev/sqlc/internal/plugin"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/codegen/sdk"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/debug"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/plugin"
 )
 
 func mysqlType(req *plugin.CodeGenRequest, col *plugin.Column) string {

@@ -22,12 +22,12 @@ import (
 	"github.com/spf13/cobra"
 	"google.golang.org/protobuf/encoding/protojson"
 
-	"github.com/sqlc-dev/sqlc/internal/config"
-	"github.com/sqlc-dev/sqlc/internal/debug"
-	"github.com/sqlc-dev/sqlc/internal/opts"
-	"github.com/sqlc-dev/sqlc/internal/plugin"
-	"github.com/sqlc-dev/sqlc/internal/shfmt"
-	"github.com/sqlc-dev/sqlc/internal/vet"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/config"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/debug"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/opts"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/plugin"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/shfmt"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/vet"
 )
 
 var ErrFailedChecks = errors.New("failed checks")

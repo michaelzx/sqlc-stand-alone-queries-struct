@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sqlc-dev/sqlc/internal/sqltest"
+	"github.com/michaelzx/sqlc-stand-alone-queries-struct/internal/sqltest"
 
 	"github.com/google/go-cmp/cmp"
 )
